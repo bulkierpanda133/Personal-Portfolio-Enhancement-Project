@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Section Layout */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* About Me */
+        #about {
+            background-color: #f9f9f9;
+        }
+
+        /* Skills and Resume */
+        #skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Projects */
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        #projects .project {
+            flex: 1 1 200px;
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Contact */
+        #contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Form Styles */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Hover Effects */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #skills {
+                grid-template-columns: 1fr;
+            }
+
+            #projects {
+                flex-direction: column;
+            }
+
+            #contact {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Personal Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This is a showcase of my skills, experience, and projects. Feel free to browse through the sections to learn more about me.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with experience in building dynamic websites. My goal is to create user-friendly and visually appealing websites using modern technologies.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills & Resume</h2>
+    <div>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, React, Node.js</p>
+    </div>
+    <div>
+        <h3>Tools & Frameworks</h3>
+        <p>Git, GitHub, Visual Studio Code, Figma</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>A description of my first project. It showcases my skills in web development.</p>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>A description of my second project. It demonstrates my experience with React.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>Connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
